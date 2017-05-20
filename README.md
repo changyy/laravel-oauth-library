@@ -11,7 +11,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class Connect extends \org\changyy\OAuth\Controller\Connect
+class OAuthConnect extends \org\changyy\OAuth\Controller\Connect
 {
     public function handleFacebookConnected($oauth_ret = []) {
         print_r($oauth_ret);
