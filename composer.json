@@ -1,0 +1,23 @@
+{
+    "name": "changyy/laravel-oauth-library",
+    "description": "Simple Facebook/Google OAuth Library for Laravel framework",
+    "homepage": "https://github.com/changyy/laravel-oauth-library",
+    "type": "library",
+    "keywords": ["facebook", "google","oauth","sdk"],
+    "require": {
+        "facebook/graph-sdk": "5.5.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yuan-Yi Changy",
+            "email": "changyy.csie@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "org\\changyy\\": "src/org/changyy"
+        }
+    }
+
+}
