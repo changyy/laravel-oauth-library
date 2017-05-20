@@ -91,7 +91,6 @@ class Connect extends Controller {
             try {
                 $response = $this->fb->get('/me?fields='.$this->config_data['facebook']['query_me_fields'], $accessToken);
                 $user_profile = $response->getGraphNode();
-                print_r($user_profile);
                 $oauth_get_uid = $user_profile->getField('id');
                 $oauth_get_name = $user_profile->getField('name');
                 $oauth_get_email = $user_profile->getField('email');
