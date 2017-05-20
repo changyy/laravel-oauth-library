@@ -126,6 +126,7 @@ class Connect extends Controller {
             }
             $output = [
                 'status' => $oauth_get_uid !== false,
+                'oauth_access_token' => $oauth_get_token,
                 'oauth_get_token' => $oauth_get_token,
                 'oauth_get_uid' => $oauth_get_uid,
                 'oauth_get_name' => $oauth_get_name,
@@ -234,9 +235,9 @@ class Connect extends Controller {
             //echo "oauth_get_profile_image:[$oauth_get_profile_image]\n";
             $output = [
                 'status' => $oauth_get_uid !== false,
-                'oauth_get_token' => $oauth_get_token,
                 'oauth_access_token' => $oauth_get_token,
                 'oauth_refresh_token' => $oauth_get_refresh_token,
+                'oauth_get_token' => $oauth_get_token,
                 'oauth_get_uid' => $oauth_get_uid,
                 'oauth_get_name' => $oauth_get_name,
                 'oauth_get_email' => $oauth_get_email,
